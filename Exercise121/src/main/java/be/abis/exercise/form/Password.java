@@ -1,0 +1,17 @@
+package be.abis.exercise.form;
+
+import jakarta.validation.constraints.Size;
+
+public class Password {
+
+    @Size(min=5,message="password should be longer than 5 characters")
+    private String password;
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+}
